@@ -1,35 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="header-wrap">
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3 d-flex align-items-center time">
+                    <div class="col-6 col-sm-3 d-flex align-items-center time">
                         <i class="fa-sharp fa-regular fa-clock" style="color: #FFD43B;"></i>
                         <p class="text-white">Sun - Sat [7:00am - 11:00pm]</p>
                     </div>
-                    <div class="col-sm-2 d-flex align-items-center contact">
+                    <div class="col-6 col-sm-2 d-flex align-items-center contact">
                         <i class="fa-solid fa-phone-volume" style="color: #FFD43B;"></i>
                         <p class="text-white">+91 123456789</p>
                     </div>
                     <div class="col d-flex justify-content-sm-end align-items-center discount">
                         <i class="fa-sharp fa-regular fa-money-bill" style="color: #FFD43B;"></i>
-                        <p class="text-white">Discount of 25% for all drinks</p>
+                        <p class="text-white">Discount of <b>25%</b> for all <b>Drinks</b></p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg nav-wrap sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-links" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href=#about>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href=#services>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href=#features>Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href=#delivery>Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href=#app>Our App</a>
+                    </li>
+                    <button type="button" class="btn btn-danger">Make Reservation <i
+                            class="fa-sharp fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="text-white my-3">We Provide Express Home Delivery</h1>
+                        <h4 class="text-white my-4">In shakes item of 2024 we are offering 20% flat discount. Don't miss
+                            out!!</h4>
+                        <button type="button" class="btn btn-danger">Order Now <i
+                                class="fa-sharp fa-regular fa-basket-shopping" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img class="img-fluid" src="images/img/img-1.png" alt="">
+                    </div>
+                    <div class="col">
+                        <span>About Us</span>
+                        <h2 class="my-3">we provide locally crafted food service</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores hic praesentium
+                            provident, ut iste similique. Animi, nesciunt. Vel quasi, natus maxime explicabo cum
+                            perferendis, architecto laborum tempore deleniti distinctio est dicta itaque velit error
+                            corporis dolore, sed repudiandae nisi provident sit quisquam voluptatem officiis. Ipsa
+                            pariatur totam quo numquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="services">
+        <div class="services">
+            <div class="container">
+                <span>Our Services</span>
+                <h2 class="text-center my-3">what we offer</h2>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="card align-items-center border cards" style="width: 18rem;">
+                            <img class="img-fluid w-50" src="images/offer/breakfast.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Breakfast</h5>
+                                <p class="card-text text-center">Some quick example text to build on the card title and
+                                    make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card align-items-center border cards" style="width: 18rem;">
+                            <img class="img-fluid w-50" src="images/offer/lunch.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Lunch</h5>
+                                <p class="card-text text-center">Some quick example text to build on the card title and
+                                    make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card align-items-center border cards" style="width: 18rem;">
+                            <img class="img-fluid w-50" src="images/offer/dinner.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Dinner</h5>
+                                <p class="card-text text-center">Some quick example text to build on the card title and
+                                    make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card align-items-center border cards" style="width: 18rem;">
+                            <img class="img-fluid w-50" src="images/offer/custom.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Custom</h5>
+                                <p class="card-text text-center">Some quick example text to build on the card title and
+                                    make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features">
+            <div class="container">
+                <span class="text-white">Our Feature Items</span>
+                <h2 class="text-center my-3 text-white">Popular Items Of Our Restaurant</h2>
+                <div class="row gy-3">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-1.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Chicken In Teriyaki</b></h5>
+                                <pre class="card-text"><b>$10.50  <del>$12.50</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-2.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Hotdog with Sausage</b></h5>
+                                <pre class="card-text"><b>$10.50  <del>$12.50</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-3.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Breakfast with Sweet</b></h5>
+                                <pre class="card-text"><b>$40.50  <del>$45.00</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-4.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Grilled Chicken Stick</b></h5>
+                                <pre class="card-text"><b>$10.50  <del>$12.50</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-5.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Chicken Barista Platter</b></h5>
+                                <pre class="card-text"><b>$30.50  <del>$32.50</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/feature/feature-item-6.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>French Fries</b></h5>
+                                <pre class="card-text"><b>$20.50  <del>$22.50</del></b></pre>
+                                <p class="card-text">Time: 15-20 mins | Serves: 1</p>
+                                <a href="#" class="btn btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery">
+        <div class="delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <span>Fast Delivery</span>
+                        <h2 class="my-3">Free Food Delivery Everyday At Your Convenience</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores nesciunt earum?
+                            Quo facere excepturi consequatur doloremque qui, culpa molestias commodi nostrum quae dicta
+                            architecto libero corrupti. Possimus, ullam dignissimos.</p>
+                        <button type="button" class="btn btn-danger">Order Now <i
+                                class="fa-sharp fa-regular fa-basket-shopping" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app">
+        <div class="app">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-6">
+                        <span>Our App</span>
+                        <h2 class="my-3 text-warning text-center">order with our application</h2>
+                        <div>
+                            <h4><i class="fa-regular fa-square-check" style="color: #ffffff;"></i> Order And Pay In A
+                                Few Minutes</h4>
+                            <p class="text-secondary">Сhoose food and pay for the order in a couple of clicks online
+                                also choose you current location using GPS.</p>
+                        </div>
+                        <div>
+                            <h4><i class="fa-regular fa-square-check" style="color: #ffffff;"></i> Check Delivery Status
+                            </h4>
+                            <p class="text-secondary">Follow the status of your order in real time and also track the
+                                delivery path until you get it.</p>
+                        </div>
+                        <div>
+                            <img src="images/app/google-playstore.png" alt="">
+                            <img src="images/app/apple-playstore.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mail">
+        <div class="mail">
+            <div class="container">
+                <span>Get in Touch</span>
+                <h2 class="my-3 text-center">Newsletter Subscribe</h2>
+                <p class="text-center">Drop us your mail address. We love to hear from you and are happy to answer any
+                    questions immediately.</p>
+                <div class="form-floating mb-3 d-flex mailtext">
+                    <input type="email" class="form-control w-50 border" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                    <div class="send">
+                        <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="footerlinks">
+                    <a href="#" class="footer-link">Register</a>
+                    <a href="#" class="footer-link">Offers</a>
+                    <a href="#" class="footer-link">Affiliate</a>
+                    <a href="#" class="footer-link">Join Team</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="rights">
+                    <p>© 2024. CCD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - $('.nav-wrap').outerHeight()
+                    }, 100);
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
