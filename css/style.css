@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header-wrap {
+    background-color: black;
+}
+
+.time p {
+    margin-top: 13px;
+    padding-left: 10px;
+}
+
+.contact p {
+    margin-top: 13px;
+    padding-left: 10px;
+}
+
+.discount p {
+    margin-top: 13px;
+    padding-left: 10px;
+
+}
+
+.nav-wrap {
+    background-color: black;
+}
+
+.nav-wrap img {
+    width: 100px;
+}
+
+.nav-links {
+    position: absolute;
+    right: 115px;
+}
+
+.home{
+    width: 100%;
+    background: url(/Bootstrap-Project/images/bg/bg-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.about, .services, .features, .delivery, .app{
+    padding: 10px;
+}
+
+.about h2, .services h2, .features h2, .delivery h2, .app h2, .mail h2{
+    text-transform: capitalize;
+}
+
+.about span,.services span, .features span, .delivery span, .app span, .mail span{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+    display: block;
+    text-align: center;
+}
+
+.services img{
+    border-radius: 50%;
+    background-color: white;
+}
+
+.cards:hover{
+    color: white;
+    background-color: red;
+}
+
+.features{
+    background-color: black;
+}
+
+.features pre{
+    font-size: 1.2rem;
+}
+
+.delivery{
+    width: 100%;
+    background: url(/Bootstrap-Project/images/bg/bg-4.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.app{
+    width: 100%;
+    background: url(/Bootstrap-Project/images/bg/bg-5.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.mail{
+    width: 100%;
+    background: url(/Bootstrap-Project/images/bg/bg-6.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.send{
+    background-color: red;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.mailtext{
+    transform: translate(50%);
+    left: -27.25%;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footerlinks{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.footerlinks a{
+    color: white;
+    font-size: 1rem;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.social{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.social i{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+}
+
+.rights{
+    color: gray;
+    width: fit-content;
+    margin: auto;
+}
