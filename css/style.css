@@ -1,128 +1,204 @@
 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
-.header-wrap {
-    background-color: black;
-}
-
-.time p {
-    margin-top: 13px;
-    padding-left: 10px;
-}
-
-.contact p {
-    margin-top: 13px;
-    padding-left: 10px;
-}
-
-.discount p {
-    margin-top: 13px;
-    padding-left: 10px;
-
-}
-
-.nav-wrap {
-    background-color: black;
-}
-
-.nav-wrap img {
-    width: 100px;
-}
-
-.nav-links {
-    position: absolute;
-    right: 115px;
-}
-
-.home{
-    width: 100%;
-    background: url(/Bootstrap-Project/images/bg/bg-1.jpg) no-repeat center;
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
-
-.about, .services, .features, .delivery, .app{
-    padding: 10px;
-}
-
-.about h2, .services h2, .features h2, .delivery h2, .app h2, .mail h2{
-    text-transform: capitalize;
-}
-
-.about span,.services span, .features span, .delivery span, .app span, .mail span{
-    font-size: 1.5rem;
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: red;
+span{
     display: block;
-    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+    -webkit-text-stroke-width: medium;
+    letter-spacing: .1875rem;
 }
 
-.services img{
-    border-radius: 50%;
+::-webkit-scrollbar {
+    width: 0.425rem;
+}
+
+::-webkit-scrollbar-track {
     background-color: white;
 }
 
-.cards:hover{
-    color: white;
-    background-color: red;
-}
-
-.features{
+::-webkit-scrollbar-thumb {
     background-color: black;
 }
 
-.features pre{
-    font-size: 1.2rem;
+
+
+.header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
-.delivery{
+.header-top .container {
+    border-bottom: .0625rem solid grey;
+    padding: 1rem 0;
+}
+
+.header-top .time-contact {
+    font-size: 1.25rem;
+    margin-right: .5625rem;
+}
+
+.nav-wrap .navbar-brand img {
+    width: 9rem;
+}
+
+.nav-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+    list-style: none;
+}
+
+.bar-icon:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: .0625rem;
+}
+
+.nav-wrap .nav-link:hover, .nav-wrap .nav-link:focus {
+    color: #ffd43b;
+}
+
+.nav-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: url(/Bootstrap-Project/images/bg/bg-4.jpg) no-repeat center;
+    background-color: black;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+
+
+.home {
+    width: 100%;
+    background: url(../images/bg/bg-1.jpg) no-repeat center;
     background-size: cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
+    padding: 17.875rem 0 9.375rem;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.services {
+    width: 100%;
+    text-align: center;
+}
+
+.services .cards {
+    margin-top: 6.4375rem;
+}
+
+.services .card {
+    padding: 5.3571rem 0.3571rem 0.7143rem;
+    border-radius: 0.3571rem;
+    border: 0;
+    -webkit-box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.services .card img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.0714rem;
+    width: 10.7143rem;
+}
+
+.services .card:hover {
+    background-color: red;
+}
+
+.services .card:hover h5,
+.services .card:hover p {
+    color: white;
+}
+
+
+.features {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.features .card {
+    border: 0;
+}
+
+.features .card pre {
+    font-size: 1.4375rem;
+    font-weight: 500;
+    margin-top: .7188rem;
+}
+
+.features .card del {
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+.features .card:hover h5 {
+    color: gray;
+}
+
+.delivery {
+    width: 100%;
+    background: url(../images/bg/bg-4.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2.875rem 0 2.875rem;
 }
 
 .app{
     width: 100%;
-    background: url(/Bootstrap-Project/images/bg/bg-5.jpg) no-repeat center;
+    background: url(../images/bg/bg-5.jpg) no-repeat center;
     background-size: cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
+    padding: 2.875rem 0 2.875rem;
+}
+
+.app span{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .mail{
     width: 100%;
-    background: url(/Bootstrap-Project/images/bg/bg-6.jpg) no-repeat center;
+    background: url(../images/bg/bg-6.jpg) no-repeat center;
     background-size: cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
+    padding: 2.875rem 0 2.875rem;
 }
 
-.send{
-    background-color: red;
-    width: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-}
-
-.mailtext{
-    transform: translate(50%);
-    left: -27.25%;
+.mail input, .mail button{
+    border-radius: 0;
 }
 
 .footer{

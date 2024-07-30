@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px) {
+    .home h1{
+        font-size: 2.1875rem;
+    }
+    .home h4{
+        font-size: 1.125rem;
+        line-height: 2rem;
+    }
+    p, a{
+        font-size: .875rem;
+        line-height: 1.2rem;
+    }
+    .navigation-wrap .navbar-brand img{
+        width: 6.25rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: .875rem;
+    }
+    .wrapper{
+        padding-top: 4.25rem;
+        padding-bottom: 3.25rem;
+    }
+    .services .cards{
+        margin-top: 4.375rem;
+    }
+    .services .card{
+        padding:3.4375rem 0 0;
+        margin-bottom:1.25rem;
+    }
+    .services .card img{
+        width:6.25rem;
+        height:6.25rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    p, a{
+        font-size: .75rem;
+    }
+    .header-top{
+        display: none;
+    }
+    .nav-wrap {
+        text-align: center;
+        background-color: black;
+    }
+    .nav-wrap .nav-link {
+        line-height: 1.875rem;
+    }
+    .home {
+        padding: 6.375rem 0 4.375rem;
+    }
+    .features .card pre{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5625rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.125rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    span {
+        font-size: .875rem;
+    }
+    .wrapper {
+        padding-top: 3.25rem;
+        padding-bottom: 2.25rem;
+    }
+    .services .card{
+        margin-bottom:2.5rem;
+    }
+    .features .card pre{
+        font-size: .875rem;
+      }
+}
